@@ -3,6 +3,10 @@
     --header-color: aquamarine;
     --footer-height: 80px;
     --footer-color: aquamarine;
+    --main-min-header: calc(100vh - calc(var(--footer-height) + var(--header-height)));
+    --item-width: 260px;
+    --item-gap: 10px;
+    --main-width: calc(var(--item-width) * 2 + var(--item-gap));
 }
 
 * {
@@ -30,6 +34,11 @@ header {
     background-color: var(--header-color);
 }
 
+main {
+    width: 100%;
+    min-height: var(--main-min-header);
+}
+
 footer {
     z-index: 999999;
     
@@ -41,4 +50,14 @@ footer {
     width: 100%;
     height: var(--footer-height);
     background-color: var(--footer-color);
+}
+
+.div{
+    width: var(--main-width);
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

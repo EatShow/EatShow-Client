@@ -1,8 +1,5 @@
 :root {
-    --item-width: 260px;
     --item-height: calc(var(--item-width) * 1.34);
-    --item-gap: 10px;
-    --main-width: calc(var(--item-width) * 2 + var(--item-gap));
     --main-change-color: blueviolet;
     --main-text-color: black;
 }
@@ -16,11 +13,6 @@ main {
 
     gap: 55px;
     margin: 40px 0 80px 0;
-}
-
-.div{
-    width: var(--main-width);
-    height: 100%;
 }
 
 .profile {
