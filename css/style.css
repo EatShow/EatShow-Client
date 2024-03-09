@@ -1,0 +1,32 @@
+:root{
+    --header-height: 80px;
+    --header-color: aquamarine;
+    --footer-height: 100px;
+    --footer-color: aquamarine;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    z-index: 999999;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--header-color);
+}
+
+footer {
+    z-index: 999999;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--footer-color);
+}
