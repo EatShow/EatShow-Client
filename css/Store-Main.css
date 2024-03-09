@@ -1,3 +1,11 @@
+:root{
+    --item-width: 250px;
+    --item-gap: 10px;
+    --main-width: calc(var(--item-width) * 2 + var(--item-gap));
+    --main-change-color: blueviolet;
+    --main-text-color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +22,14 @@ main {
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
-    width: 50vw;
-    max-width: 500px;
+    width: var(--main-width);
 
     gap: 55px;
 }
 
 .profile{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; 
     flex-direction: column;
     width: 100%;
@@ -32,7 +39,7 @@ main {
 
 .main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
     flex-direction: row;
     width: 100%;
@@ -42,7 +49,7 @@ main {
 .store-infor{
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 10px; 
     top: 0;
 }
 
@@ -60,9 +67,10 @@ main {
 
 .store-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 40px;
 }
 
 
@@ -70,6 +78,7 @@ main {
 .count{
     width: 100%;
     text-align: center;
+    color: var(--main-text-color);
 }
 
 .count{
@@ -80,7 +89,7 @@ main {
 .main-change{
     width: 100%;
     height: 40px;
-    background-color: blueviolet;
+    background-color: var(--main-change-color);
 }
 
 .menu{
@@ -88,13 +97,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: var(--item-gap);
     flex-wrap: wrap;
 }
 
 
 .menu > .item{
-    width: 250px;
+    width: var(--item-width);
     height: 300px;
     position: relative;
 }
@@ -108,12 +117,12 @@ main {
 
 .text > .name { 
     font-size: 20px;
-    color: black;
+    color: var(--main-text-color);
 }
 
 .text > .detail { 
     font-size: 10px;
-    color: black;
+    color: var(--main-text-color);
 }
 
 .item > img{
