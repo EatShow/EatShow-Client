@@ -1,7 +1,7 @@
 :root{
-    --header-height: 80px;
+    --header-height: 44px;
     --header-color: aquamarine;
-    --footer-height: 100px;
+    --footer-height: 80px;
     --footer-color: aquamarine;
 }
 
@@ -19,6 +19,12 @@ body{
 
 header {
     z-index: 999999;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     width: 100%;
     height: var(--header-height);
     background-color: var(--header-color);
@@ -26,6 +32,12 @@ header {
 
 footer {
     z-index: 999999;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     width: 100%;
     height: var(--footer-height);
     background-color: var(--footer-color);

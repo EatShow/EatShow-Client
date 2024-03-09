@@ -1,5 +1,6 @@
-:root{
-    --item-width: 250px;
+:root {
+    --item-width: 260px;
+    --item-height: calc(var(--item-width) * 1.34);
     --item-gap: 10px;
     --main-width: calc(var(--item-width) * 2 + var(--item-gap));
     --main-change-color: blueviolet;
@@ -17,41 +18,47 @@ main {
     margin: 40px 0 80px 0;
 }
 
-.profile{
+.div{
+    width: var(--main-width);
+    height: 100%;
+}
+
+.profile {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     width: 100%;
     gap: 25px;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     flex-direction: row;
     width: 100%;
     gap: 65px;
 }
 
-.store-infor{
+.store-infor {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
     top: 0;
 }
 
-.store-img{
+.store-img {
     overflow: hidden;
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.store-img > img{
+.store-img>img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .store-list {
@@ -64,24 +71,24 @@ main {
 
 
 .title,
-.count{
+.count {
     width: 100%;
     text-align: center;
     color: var(--main-text-color);
 }
 
-.count{
+.count {
     font-weight: bold;
     font-size: 50px;
 }
 
-.main-change{
+.main-change {
     width: 100%;
     height: 40px;
     background-color: var(--main-change-color);
 }
 
-.menu{
+.menu {
     width: 600px;
     display: flex;
     justify-content: center;
@@ -91,31 +98,32 @@ main {
 }
 
 
-.menu > .item{
+.menu>.item {
     width: var(--item-width);
-    height: 300px;
+    height: var(--item-height);
     position: relative;
 }
 
-.item > .text{
-    position:absolute;
-    bottom:0px;
-    padding:10px;
+.item>.text {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
     gap: 20px;
 }
 
-.text > .name { 
+.text>.name {
     font-size: 20px;
     color: var(--main-text-color);
 }
 
-.text > .detail { 
+.text>.detail {
     font-size: 10px;
     color: var(--main-text-color);
 }
 
-.item > img{
+.item>img {
     width: 100%;
     height: 100%;
     mask-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    object-fit: cover;
 }
