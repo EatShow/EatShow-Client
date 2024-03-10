@@ -37,6 +37,13 @@ header {
 main {
     width: 100%;
     min-height: var(--main-min-header);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 40px 0 0 0;
 }
 
 footer {
