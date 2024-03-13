@@ -6,6 +6,12 @@
     <title>store - request - delivery</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/Store-request-delivery.css" />
+
+    <script>
+      function RequestDeliveryDriver() {
+        location.href = "Request-Delivery-Driver.html";
+      }
+    </script>
   </head>
 
   <body>
@@ -15,7 +21,16 @@
 
     <main>
       <section id="infor">
-        <div class="delivery-infor title-infor">배달원 요청</div>
+        <div class="delivery-infor title-infor">
+          배달원 요청
+          <button
+            type="button"
+            class="navyBtn"
+            onclick="RequestDeliveryDriver()"
+          >
+            요청
+          </button>
+        </div>
         <div class="manager-infor title-infor">관리자 정보</div>
       </section>
 
