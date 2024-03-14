@@ -1,0 +1,100 @@
+main {
+  width: var(--main-width);
+  height: calc(var(--main-min-header) - 40px);
+  gap: 30px;
+  position: relative;
+}
+
+section {
+  width: 100%;
+}
+
+#infor {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title-infor {
+  color: black;
+}
+
+.delivery-infor {
+  font-size: 45px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.admin-infor {
+  font-size: 30px;
+}
+
+#delivery-apply {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: lavenderblush;
+}
+
+.delivery-notice {
+  font-size: 25px;
+}
+
+.delivery-number-count {
+  display: flex;
+  gap: 30px;
+  width: 300px;
+  height: 10%;
+  background-color: lightsalmon;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-number-count > button {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  background-color: transparent;
+}
+
+.delivery-number-count > input {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: lightslategray;
+}
+
+.setting-btn {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.setting-btn > button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  border: 0.5px solid black;
+}
