@@ -1,0 +1,147 @@
+main {
+  width: var(--main-width);
+  height: calc(var(--main-min-header) - 40px);
+  gap: 30px;
+  position: relative;
+}
+
+section {
+  width: 100%;
+}
+
+#infor {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+i {
+  color: black;
+  width: 30px;
+  height: 30px;
+  background-color: lavender;
+  margin-bottom: 15px;
+}
+
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+}
+
+.title-infor {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.order-num {
+  font-size: 30px;
+}
+
+.order-time {
+  font-size: 23px;
+}
+
+.request-infor {
+  width: 365px;
+  height: 100px;
+  background-color: lavenderblush;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#order-detail {
+  color: black;
+  width: 500px;
+}
+
+.order-infor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  font-size: 20px;
+}
+
+.order-line-top {
+  border-top: 2.5px solid black;
+  margin-bottom: 15px;
+}
+
+.order-line-bottom {
+  border-bottom: 2.5px solid black;
+  margin-top: 15px;
+}
+
+.order-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin: 15px 0px;
+}
+
+.order-choice-menu,
+.order-choice-quantity,
+.order-choice-price {
+  font-size: 20px;
+}
+
+.order-detail-situation {
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 55px;
+  border-left: 3px solid lightblue;
+  height: auto;
+}
+
+.detail-option {
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.order-total-price {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 230px;
+}
+
+.total-price,
+.total-price-num {
+  font-size: 23px;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: center;
+}
+
+#btn > button {
+  margin-top: 70px;
+  width: 180px;
+  height: 65px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  font-size: 15px;
+}
+
+.no-btn {
+  background-color: lavender;
+}
+
+.yes-btn {
+  background-color: lavenderblush;
+}

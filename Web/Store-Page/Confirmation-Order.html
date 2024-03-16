@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store - confirmation - order</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/Store-confirmation-order.css" />
+
+    <script>
+      function EstimatedTime() {
+        location.href = "Estimated-Time.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="div"></div>
+    </header>
+
+    <main>
+      <section id="infor">
+        <i class="exit-btn"></i>
+        <div class="order-header">
+          <div class="order-num title-infor">주문 번호</div>
+          <div class="order-time title-infor">주문 시간</div>
+        </div>
+        <div class="request-infor title-infor">요청사항</div>
+      </section>
+
+      <section id="order-detail">
+        <div class="order-line-top"></div>
+        <div class="order-infor">
+          <div class="order-menu">메뉴</div>
+          <div class="order-quantity">수량</div>
+          <div class="order-price">금액</div>
+        </div>
+
+        <div class="order-line-bottom"></div>
+
+        <div class="order-situation">
+          <div class="order-choice">
+            <div class="order-choice-menu">주문메뉴</div>
+            <div class="order-choice-quantity">주문수량</div>
+            <div class="order-choice-price">주문금액</div>
+          </div>
+          <div class="order-detail-situation">
+            <div class="detail-option">옵션추가 옵션추가 옵션추가 옵션추가</div>
+            <div class="detail-option">옵션추가 옵션추가 옵션추가 옵션추가</div>
+          </div>
+          <div class="order-choice">
+            <div class="order-choice-menu">주문메뉴</div>
+            <div class="order-choice-quantity">주문수량</div>
+            <div class="order-choice-price">주문금액</div>
+          </div>
+        </div>
+
+        <div class="order-line-bottom"></div>
+
+        <div class="order-total-price">
+          <div class="total-price">주문금액</div>
+          <div class="total-price-num">7777777원</div>
+        </div>
+      </section>
+
+      <section id="btn">
+        <button class="no-btn">거절</button>
+        <button type="button" class="yes-btn" onclick="EstimatedTime()">
+          수락
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="div"></div>
+    </footer>
+  </body>
+</html>
