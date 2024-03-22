@@ -1,0 +1,82 @@
+main {
+  width: var(--main-width);
+  height: calc(var(--main-min-header) - 40px);
+  gap: 30px;
+  position: relative;
+}
+
+section {
+  width: 100%;
+}
+
+#infor {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+i {
+  color: black;
+  width: 30px;
+  height: 30px;
+  background-color: lavender;
+  margin-bottom: 15px;
+}
+
+#time-control {
+  display: flex;
+  width: 400px;
+  height: 70px;
+  gap: 30px;
+  background-color: lightblue;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+#time-control > button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: center;
+}
+
+#time-control > input {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: center;
+}
+
+#btn > button {
+  margin-top: 70px;
+  width: 180px;
+  height: 65px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  font-size: 15px;
+}
+
+.no-btn {
+  background-color: lavender;
+}
+
+.yes-btn {
+  background-color: lavenderblush;
+}
